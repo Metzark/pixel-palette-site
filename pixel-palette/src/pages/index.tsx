@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta name="description" content="Fun game for lazy artists" />
         <title>Pixel Palette</title>
       </Head>
       <main className={styles.main}>
