@@ -1,6 +1,7 @@
+import Link from "next/link";
 import style from "../styles/Hero.module.css";
 
-const Hero = () => {
+const Hero = (props: any) => {
   return (
     <div className={style.section}>
       <h1 className={style.title}>A fun game for the lazy artist</h1>
@@ -9,8 +10,8 @@ const Hero = () => {
         in.
       </p>
       <div className={style.options}>
-        <button className={style.button}>Download</button>
-        <button className={style.button}>Learn More</button>
+        <button title='No download available' className={style.button}>Download</button>
+        <Link className={style.button} href={'/about'}>Learn More</Link>
       </div>
     </div>
   );
