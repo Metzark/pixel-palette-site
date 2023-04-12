@@ -1,0 +1,85 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    min-width: 30rem;
+}
+
+.home{
+    text-decoration: none;
+}
+
+.title{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.titleAlt{
+    color: #fff;
+}
+
+.btnsDiv{
+    display: flex;
+    gap: 1rem;
+}
+
+.createAccount, .button {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 15px;
+    border: 2px solid #020b1a;
+    background-color: var(--dark-blue);
+    box-shadow: var(--light-shadow);
+    transform: translateY(0) scale(1);
+    transition: all 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .createAccount:hover, .button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--light-shadow-hovered);
+  }
+
+  .createAccount{
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+    font-weight: 700;
+  }
+
+  @media (max-width: 50.625em){
+    .nav{
+        align-items: flex-start;
+    }
+
+    .btnsDiv{
+        flex-direction: column-reverse;
+    }
+  }
+
+  @media (max-width: 33.125em){
+    .nav{
+        padding: 1rem 1rem;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+    .createAccount, .button {
+        width: 11rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        border-radius: 12px;
+
+      }
+  }
