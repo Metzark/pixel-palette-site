@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "../styles/Hero.module.css";
 
-const Hero = (props: any) => {
+const Hero = () => {
   return (
     <div className={style.section}>
       <h1 className={style.title}>A fun game for the lazy artist</h1>
