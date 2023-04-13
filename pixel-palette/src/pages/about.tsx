@@ -6,7 +6,7 @@ const About = () => {
     return <>
     <Head>
       <meta name="description" content="Fun game for lazy artists" />
-      <title>Pixel Palette</title>
+      <title>Pixel Palette | About</title>
     </Head>
     <main className={style.main}>
       <Nav />
