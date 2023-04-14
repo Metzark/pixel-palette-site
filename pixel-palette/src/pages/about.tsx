@@ -25,6 +25,7 @@ const About = () => {
             <p className={style.text}>Upload your art creations and view other creations from around the world</p>
         </div>
       </div>
+      <button title='No download available' className={style.button}>Download Now</button>
     </main>
   </>
 }
