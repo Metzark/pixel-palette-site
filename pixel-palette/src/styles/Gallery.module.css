@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    height: 100vh;
+    min-height: 76rem;
+  }
+
+  .title{
+    font-size: 4.5rem;
+    width: 100%;
+    color: var(--dark-blue);
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+}
+
+
+.container{
+    width: 100%;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 35rem );
+    row-gap: 5rem;
+    column-gap: 5rem;
+  }
+
+  @media (max-width: 34.375em){
+    .container{
+      grid-template-columns: repeat( auto-fit, 22rem );
+      padding: 0 1rem;
+      justify-content: center;
+    }
+  }

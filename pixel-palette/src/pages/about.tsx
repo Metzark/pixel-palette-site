@@ -6,7 +6,7 @@ const About = () => {
     return <>
     <Head>
       <meta name="description" content="Fun game for lazy artists" />
-      <title>Pixel Palette</title>
+      <title>Pixel Palette | About</title>
     </Head>
     <main className={style.main}>
       <Nav />
@@ -25,6 +25,7 @@ const About = () => {
             <p className={style.text}>Upload your art creations and view other creations from around the world</p>
         </div>
       </div>
+      <button title='No download available' className={style.button}>Download Now</button>
     </main>
   </>
 }
