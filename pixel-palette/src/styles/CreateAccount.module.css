@@ -40,6 +40,12 @@
     padding: 0.5rem 0.5rem;
 }
 
+.createErr{
+    font-size: 1.4rem;
+    color: #bb3e3e;
+    margin-left: 0.2rem
+}
+
 .btnContainer{
     display: flex;
     justify-content: flex-end;
@@ -67,7 +73,26 @@
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: var(--light-shadow-hovered);
-  }
+}
+
+.success{
+    font-size: 2rem;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.downloadMsg{
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+}
+
+.downloadContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
 
   @media (max-width: 31.25em){
    .title{
