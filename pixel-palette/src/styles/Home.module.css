@@ -4,5 +4,19 @@
   align-items: center;
   justify-content: center;
   padding: 6rem;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 57rem;
+}
+
+
+@media (max-width: 50.625em){
+  .main{
+    min-height:68rem;
+  }
+}
+
+@media (max-width: 33.125em){
+  .main{
+    min-height:57rem;
+  }
 }
