@@ -20,7 +20,7 @@ const CreationCard = (props: any) =>{
     return (<div className={style.card}>
         <div className={style.creationGrid}>
             {data.map((d: any, i: number) =>{
-                return (<div key={i} style={{'backgroundColor': `${colors[d]}`}}></div>);
+                return (<div key={i} style={{'backgroundColor': `${d === -1 ? '#ffffff' : colors[d]}`}}></div>);
             })}
         </div>
         <div className={style.creationInfo}>
