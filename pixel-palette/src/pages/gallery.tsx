@@ -11,7 +11,7 @@ export async function getStaticProps(){
             let gridData: string[] = [];
             for(let idx: number = 0; idx < findCreations.length; idx++){
                 let url: any = findCreations[idx]['fields']['File'][0]['url'];
-                let response = await fetch(url);
+                let response = await fetch(url, {mode: 'no-cors'});
                 gridData.push(await response.text());
             }
             const creations = findCreations.map((creation: any, i: number) => {
